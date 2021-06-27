@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Output, EventEmmiter } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -11,6 +11,14 @@ export class ModalComponent implements OnInit {
 
   ngOnInit(): void {
     document.body.appendChild(this.el.nativeElement);
+  }
+  
+  ngOnDestroy() {
+    this.el.nativeElement.remove()
+  }
+  
+  onCloseClick() {
+    
   }
 
 }
