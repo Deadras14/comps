@@ -4,11 +4,13 @@ import { ModsHomeComponent } from './mods-home/mods-home.component';
 import { ModsRoutingModule } from './mods-routing.module';
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
   declarations: [
     ModsHomeComponent,
-    ModalComponent
+    ModalComponent,
+    AccordionComponent
   ],
   imports: [
     CommonModule,
