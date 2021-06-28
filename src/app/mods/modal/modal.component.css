@@ -1,4 +1,4 @@
-div.actions:empty {
+.actions:empty {
   display: none;
 }
 
@@ -6,6 +6,6 @@ div.actions:empty {
   display: none;
 }
 
-div.actions:empty + div.actions-default {
+.actions:empty + div.actions-default {
   display: block;
 }
